@@ -40,6 +40,17 @@
     <footer>
       <p>&copy; Prince Anane</p>
     </footer>
-    <script src="scripts.js"></script>
+    <script>
+      function validateForm() {
+        var name = document.getElementById("name").value;
+        var email = document.getElementById("email").value;
+        var message = document.getElementById("message").value;
+
+        if (!name || !email || !message) {
+          alert("Please fill out all fields.");
+          return false;
+        }
+      }
+    </script>
   </body>
 </html>
