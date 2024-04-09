@@ -7,8 +7,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
   </head>
-  <h1 id="Home">REFLECTION OF MY JOURNEY AT KSU</h1>
-
   <body>
     <header>
       <nav class="nav">
@@ -22,17 +20,18 @@
         </ul>
       </nav>
     </header>
+    <h1 id="Home">REFLECTION OF MY JOURNEY AT KSU</h1>
     <h2 id="Contact">GET IN TOUCH</h2>
     <div class="par">
-      <form id="contactForm" onsubmit="validateForm(event)">
+      <form action="/send-email" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" />
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" />
+        <input type="email" id="email" name="email" required />
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+        <textarea id="message" name="message" rows="4" required></textarea>
 
         <button type="submit">Submit</button>
       </form>
@@ -40,7 +39,5 @@
     <footer>
       <p>&copy; Prince Anane</p>
     </footer>
-    <script src="scripts.js"></script>
   </body>
 </html>
-
